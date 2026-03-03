@@ -3,7 +3,7 @@ info:
   model: int-scaffold
 packages:
 - name: JC_SCRATCHProject
-  gitServerName: johnpcarter_priv
+  gitServerName: johnpcarter_pub
   gitUrl: https://github.com/johnpcarter
   gitUsername: johnpcarter
   gitBranch: main
