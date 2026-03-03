@@ -123,4 +123,46 @@
 </DATA>
 </MAPSET>
 </MAP>
+
+<LOOP NAME="REPEAT" IN-ARRAY="/documents">
+  <COMMENT></COMMENT>
+
+  <!-- nodes -->
+
+<INVOKE NAME="Flow" SERVICE="pub.flow:debugLog">
+  <COMMENT></COMMENT>
+</INVOKE>
+
+<RETRY NAME="REPEATFORCOUNT" TIMEOUT="" COUNT="%/accessToken%" BACK-OFF="0" LOOP-ON="SUCCESS">
+  <COMMENT></COMMENT>
+
+  <!-- nodes -->
+
+<SEQUENCE NAME="IF" EXIT-ON="FAILURE" CONDITION="((%/documents/send_doc_to_customer%=='true'))" FORM="IF">
+
+  <!-- nodes -->
+
+<INVOKE NAME="Flow" SERVICE="pub.flow:debugLog">
+</INVOKE>
+
+<SEQUENCE TIMEOUT="" EXIT-ON="FAILURE" FORM="TRY">
+  <COMMENT></COMMENT>
+
+  <!-- nodes -->
+
+<INVOKE NAME="Client" SERVICE="pub.client:http">
+</INVOKE>
+</SEQUENCE>
+
+<SEQUENCE EXIT-ON="FAILURE" FORM="CATCH">
+  <COMMENT></COMMENT>
+
+  <!-- nodes -->
+
+<SEQUENCE NAME="NEW" EXIT-ON="FAILURE">
+</SEQUENCE>
+</SEQUENCE>
+</SEQUENCE>
+</RETRY>
+</LOOP>
 </FLOW>
