@@ -8,6 +8,7 @@ packages:
   gitUsername: johnpcarter
   gitBranch: main
 - name: WmJDBCAdapter
+  version: 10.3.0.0.34
   wpmServer: https://packages.webmethods.io
   wpmRegistry: licensed
 services:
@@ -43,7 +44,7 @@ configurationVariables:
   ? artConnection.JC_SCRATCHProject.project.jc_scratch.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.scratch.connectionSettings.networkProtocol
   : ""
   ? artConnection.JC_SCRATCHProject.project.jc_scratch.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.scratch.connectionSettings.serverName
-  : mysql
+  : mysql-dev
   ? artConnection.JC_SCRATCHProject.project.jc_scratch.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.scratch.connectionSettings.datasourceClass
   : com.mysql.cj.jdbc.MysqlDataSource
   ? artConnection.JC_SCRATCHProject.project.jc_scratch.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.scratch.connectionSettings.password
