@@ -8,4 +8,8 @@
 <INVOKE NAME="Invoke predefined:com.wm.adapter.wmjdbc.JDBCAdapter" TIMEOUT="" SERVICE="project.jc_scratch.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.operations.actions:getLogs" VALIDATE-IN="" VALIDATE-OUT="">
   <COMMENT></COMMENT>
 </INVOKE>
+
+<INVOKE NAME="Flow" SERVICE="pub.flow:debugLog">
+  <COMMENT></COMMENT>
+</INVOKE>
 </FLOW>
