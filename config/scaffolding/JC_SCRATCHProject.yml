@@ -11,6 +11,11 @@ packages:
   version: 10.3.0.0.34
   wpmServer: https://packages.webmethods.io
   wpmRegistry: licensed
+- name: JcScratch
+  gitServerName: johnpcarter_pub
+  gitUrl: https://github.com/johnpcarter
+  gitUsername: johnpcarter
+  gitBranch: main
 services:
 - serviceName: project.jc_scratch.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections:scratch
   packages:
@@ -31,47 +36,47 @@ services:
 configurationVariables:
   ? artConnection.JC_SCRATCHProject.project.jc_scratch.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.scratch.connectionManagerSettings.maximumPoolSize
   : "5"
-  ? artConnection.JC_SCRATCHProject.project.jc_scratch.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.scratch.connectionManagerSettings.startupBackoffSecs
-  : "10"
-  ? artConnection.JC_SCRATCHProject.project.jc_scratch.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.scratch.connectionSettings.portNumber
-  : "3306"
-  ? artConnection.JC_SCRATCHProject.project.jc_scratch.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.scratch.connectionSettings.trustStore
-  : ""
-  ? artConnection.JC_SCRATCHProject.project.jc_scratch.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.scratch.connectionManagerSettings.expireTimeout
-  : "1000"
-  ? artConnection.JC_SCRATCHProject.project.jc_scratch.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.scratch.connectionManagerSettings.startupRetryCount
-  : "0"
-  ? artConnection.JC_SCRATCHProject.project.jc_scratch.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.scratch.connectionManagerSettings.poolable
-  : "true"
-  ? artConnection.JC_SCRATCHProject.project.jc_scratch.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.scratch.connectionSettings.user
-  : scratch
-  ? artConnection.JC_SCRATCHProject.project.jc_scratch.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.scratch.connectionSettings.transactionType
-  : NO_TRANSACTION
-  ? artConnection.JC_SCRATCHProject.project.jc_scratch.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.scratch.connectionManagerSettings.heartBeatInterval
-  : "0"
-  ? artConnection.JC_SCRATCHProject.project.jc_scratch.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.scratch.connectionSettings.networkProtocol
-  : ""
-  ? artConnection.JC_SCRATCHProject.project.jc_scratch.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.scratch.connectionSettings.serverName
-  : mysql-dev
-  ? artConnection.JC_SCRATCHProject.project.jc_scratch.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.scratch.connectionSettings.datasourceClass
-  : com.mysql.cj.jdbc.MysqlDataSource
-  ? artConnection.JC_SCRATCHProject.project.jc_scratch.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.scratch.connectionSettings.password
-  : "{AES}k2qAJdP9PhwpYvfXwLD4DA=="
   ? artConnection.JC_SCRATCHProject.project.jc_scratch.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.scratch.connectionSettings.dbType
   : MySQL
+  ? artConnection.JC_SCRATCHProject.project.jc_scratch.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.scratch.connectionManagerSettings.startupRetryCount
+  : "0"
   ? artConnection.JC_SCRATCHProject.project.jc_scratch.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.scratch.connectionManagerSettings.blockingTimeout
   : "1000"
-  ? artConnection.JC_SCRATCHProject.project.jc_scratch.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.scratch.connectionSettings.databaseName
-  : scratch
-  ? artConnection.JC_SCRATCHProject.project.jc_scratch.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.scratch.connectionEnabled
-  : "false"
   ? artConnection.JC_SCRATCHProject.project.jc_scratch.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.scratch.connectionManagerSettings.poolIncrementSize
   : "1"
+  ? artConnection.JC_SCRATCHProject.project.jc_scratch.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.scratch.connectionManagerSettings.poolable
+  : "true"
+  ? artConnection.JC_SCRATCHProject.project.jc_scratch.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.scratch.connectionManagerSettings.startupBackoffSecs
+  : "10"
+  ? artConnection.JC_SCRATCHProject.project.jc_scratch.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.scratch.connectionSettings.user
+  : scratch
+  ? artConnection.JC_SCRATCHProject.project.jc_scratch.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.scratch.connectionSettings.portNumber
+  : "3306"
+  ? artConnection.JC_SCRATCHProject.project.jc_scratch.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.scratch.connectionSettings.databaseName
+  : scratch
   ? artConnection.JC_SCRATCHProject.project.jc_scratch.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.scratch.connectionSettings.driverType
   : default
   ? artConnection.JC_SCRATCHProject.project.jc_scratch.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.scratch.connectionSettings.keyStore
   : ""
   ? artConnection.JC_SCRATCHProject.project.jc_scratch.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.scratch.connectionManagerSettings.minimumPoolSize
   : "1"
+  ? artConnection.JC_SCRATCHProject.project.jc_scratch.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.scratch.connectionEnabled
+  : "false"
+  ? artConnection.JC_SCRATCHProject.project.jc_scratch.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.scratch.connectionSettings.transactionType
+  : NO_TRANSACTION
+  ? artConnection.JC_SCRATCHProject.project.jc_scratch.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.scratch.connectionManagerSettings.heartBeatInterval
+  : "0"
+  ? artConnection.JC_SCRATCHProject.project.jc_scratch.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.scratch.connectionSettings.networkProtocol
+  : ""
   ? artConnection.JC_SCRATCHProject.project.jc_scratch.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.scratch.connectionSettings.otherProperties
   : loginTimeout=60;
+  ? artConnection.JC_SCRATCHProject.project.jc_scratch.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.scratch.connectionSettings.serverName
+  : mysql-dev
+  ? artConnection.JC_SCRATCHProject.project.jc_scratch.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.scratch.connectionSettings.datasourceClass
+  : com.mysql.cj.jdbc.MysqlDataSource
+  ? artConnection.JC_SCRATCHProject.project.jc_scratch.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.scratch.connectionSettings.trustStore
+  : ""
+  ? artConnection.JC_SCRATCHProject.project.jc_scratch.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.scratch.connectionManagerSettings.expireTimeout
+  : "1000"
+  ? artConnection.JC_SCRATCHProject.project.jc_scratch.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.scratch.connectionSettings.password
+  : "{AES}k2qAJdP9PhwpYvfXwLD4DA=="

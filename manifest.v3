@@ -11,18 +11,19 @@
   <null name="replication_services"/>
   <record name="requires" javaclass="com.wm.util.Values">
     <value name="WmJDBCAdapter">10.3.0.0.34</value>
+    <value name="JcScratch">1.1</value>
   </record>
   <null name="lazy_load_node_types"/>
   <null name="listACL"/>
   <value name="webappLoad">yes</value>
   <value name="reloadWithDependentPackage">yes</value>
-  <value name="build">31</value>
+  <value name="build">32</value>
   <null name="description"/>
   <value name="created_date">03-03-2026 10:34:08 GMT</value>
   <null name="extendedProperties"/>
   <null name="target_server_version"/>
   <value name="isProjectPackage">true</value>
-  <value name="lastUpdated">2026-03-04T13:14:02.143220447Z</value>
+  <value name="lastUpdated">2026-03-04T14:45:34.706159087Z</value>
   <value name="wmProjectId">fle087e99ce43e4b6f9115b49c115c5865</value>
   <value name="creator">John Carter</value>
 </Values>
